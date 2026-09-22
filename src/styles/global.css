@@ -394,9 +394,28 @@ p { margin: 0; }
 .wp__content p { color: rgba(255,255,255,0.82); }
 @media (max-width: 860px) {
   .wp { flex-direction: column; height: auto; }
-  .wp__panel { min-height: 90px; flex: none; height: 90px; transition: height 0.6s var(--ease); will-change: height; transform: translateZ(0); }
-  .wp__panel.is-open { height: 480px; }
-  .wp__label { writing-mode: horizontal-tb; transform: none; left: 1.4rem; bottom: auto; top: 50%; translate: 0 -50%; }
+  .wp__panel {
+    min-height: 72px; flex: none; height: auto;
+    max-height: 72px; overflow: hidden;
+    transition: max-height 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: max-height; transform: translateZ(0);
+  }
+  .wp__panel.is-open { max-height: 800px; }
+  .wp__panel img { display: none; }
+  .wp__panel.is-open img { display: block; position: relative; height: 220px; width: 100%; object-fit: cover; }
+  .wp__label {
+    writing-mode: horizontal-tb; transform: none;
+    position: relative; left: auto; bottom: auto; top: auto;
+    display: flex; align-items: center;
+    padding: 1.2rem 1.4rem; font-size: var(--step-0);
+    background: rgba(19, 45, 76, 0.7);
+    z-index: 2; pointer-events: none;
+  }
+  .wp__content {
+    position: relative; z-index: 2;
+    padding: 1.2rem 1.4rem 1.6rem;
+    background: rgba(19, 45, 76, 0.95);
+  }
 }
 
 /* ---------- Reasons ---------- */
