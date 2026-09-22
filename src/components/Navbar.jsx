@@ -63,7 +63,7 @@ export default function Navbar() {
           </ul>
           <div className="nav__cta">
             <button className="btn btn--small" onClick={() => open()}><CalendarCheck size={17} /> Book appointment</button>
-            <button className="nav__burger" onClick={() => setDrawer(true)} aria-label="Open menu" aria-expanded={drawer}><Menu size={22} /></button>
+            <button className="nav__burger" onClick={() => setDrawer(true)} aria-label="Open menu" aria-expanded={drawer}><Menu size={18} /></button>
           </div>
         </nav>
       </motion.header>

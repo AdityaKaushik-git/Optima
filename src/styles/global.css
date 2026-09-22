@@ -205,11 +205,12 @@ p { margin: 0; }
 .nav__link.is-active { color: var(--white); }
 .nav__cta { display: flex; align-items: center; gap: 0.6rem; }
 .nav__burger {
-  display: none; width: 46px; height: 46px; border-radius: 50%;
-  border: 0; background: var(--ink); color: var(--white);
-  align-items: center; justify-content: center;
+  display: none; width: 36px; height: 36px; border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.08); color: var(--white);
+  align-items: center; justify-content: center; transition: background 0.2s;
 }
-.nav--over .nav__burger { background: rgba(255,255,255,0.16); }
+.nav__burger:hover { background: rgba(255,255,255,0.18); }
+.nav--over .nav__burger { background: rgba(19,45,76,0.12); border-color: rgba(19,45,76,0.2); color: var(--ink); }
 @media (max-width: 980px) {
   .nav__links, .nav__cta .btn { display: none; }
   .nav__burger { display: inline-flex; }
