@@ -41,6 +41,9 @@ export default function Footer() {
       </div>
       <div className="footer__bottom wrap">
         <span>© {new Date().getFullYear()} {company.legal} All rights reserved.</span>
+        <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: 'var(--step--1)' }}>
+          Designed &amp; built by <strong style={{ color: 'var(--star)', fontWeight: 600 }}>Aditya Kaushik</strong>
+        </span>
         <span>Waterproofing and technical services in Dubai, U.A.E.</span>
       </div>
     </footer>
