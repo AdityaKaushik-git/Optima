@@ -84,7 +84,7 @@ export default function Hero() {
 
       <div className="hero__water" aria-hidden="true">
         <Wave fill="var(--water)" opacity={0.35} duration={12} amplitude={22} reverse />
-        <Wave fill="var(--water-deep)" duration={8} amplitude={16} />
+        <Wave fill="var(--ink)" duration={8} amplitude={16} />
       </div>
     </section>
   );

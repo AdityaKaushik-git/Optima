@@ -283,7 +283,7 @@ p { margin: 0; }
 }
 
 /* ---------- Marquee ---------- */
-.marquee { background: var(--water-deep); color: var(--white); overflow: hidden; padding-block: 1.1rem; }
+.marquee { background: var(--ink); color: var(--white); overflow: hidden; padding-block: 1.1rem; }
 .marquee__track { display: flex; width: max-content; }
 .marquee__item {
   display: inline-flex; align-items: center; gap: 1.4rem; padding-right: 1.4rem;
@@ -394,8 +394,8 @@ p { margin: 0; }
 .wp__content p { color: rgba(255,255,255,0.82); }
 @media (max-width: 860px) {
   .wp { flex-direction: column; height: auto; }
-  .wp__panel { min-height: 90px; flex: none; height: 90px; transition: height 0.7s var(--ease); }
-  .wp__panel.is-open { height: 420px; }
+  .wp__panel { min-height: 90px; flex: none; height: 90px; transition: height 0.6s var(--ease); will-change: height; transform: translateZ(0); }
+  .wp__panel.is-open { height: 480px; }
   .wp__label { writing-mode: horizontal-tb; transform: none; left: 1.4rem; bottom: auto; top: 50%; translate: 0 -50%; }
 }
 
