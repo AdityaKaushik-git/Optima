@@ -16,7 +16,7 @@ export default function WaterproofingPanels() {
           <motion.div
             key={w.slug}
             className={`wp__panel${isOpen ? ' is-open' : ''}`}
-            onMouseEnter={() => setOpenIdx(i)}
+            onPointerEnter={(e) => e.pointerType === 'mouse' && setOpenIdx(i)}
             onClick={() => setOpenIdx(i)}
             onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), setOpenIdx(i))}
             role="button"

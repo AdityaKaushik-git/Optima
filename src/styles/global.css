@@ -274,7 +274,7 @@ p { margin: 0; }
 .hero__dots { position: absolute; z-index: 3; right: var(--gutter); bottom: 7.5rem; display: flex; gap: 0.4rem; }
 .hero__dot { width: 28px; height: 4px; border: 0; padding: 0; border-radius: 4px; background: rgba(255,255,255,0.3); overflow: hidden; position: relative; }
 .hero__dot i { position: absolute; inset: 0; background: var(--star); transform-origin: 0 50%; }
-.hero__water { position: absolute; left: 0; right: 0; bottom: -1px; z-index: 2; height: 120px; pointer-events: none; }
+.hero__water { position: absolute; left: 0; right: 0; bottom: -1px; z-index: 2; height: 80px; pointer-events: none; }
 .hero__water svg { position: absolute; bottom: 0; width: 200%; height: 100%; }
 @media (max-width: 760px) {
   .hero__dots { bottom: 6rem; left: var(--gutter); right: auto; }
