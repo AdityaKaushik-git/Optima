@@ -71,16 +71,7 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      <div className="hero__dots" role="tablist" aria-label="Choose slide">
-        {heroSlides.map((_, n) => (
-          <button key={n} className="hero__dot" onClick={() => setI(n)} role="tab" aria-selected={n === i} aria-label={`Slide ${n + 1}`}>
-            {n === i && (
-              <motion.i initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: SLIDE_MS / 1000, ease: 'linear' }} />
-            )}
-            {n < i && <i />}
-          </button>
-        ))}
-      </div>
+
 
       <div className="hero__water" aria-hidden="true">
         <Wave fill="var(--water)" opacity={0.35} duration={12} amplitude={14} reverse />
