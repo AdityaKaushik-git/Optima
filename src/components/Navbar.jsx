@@ -78,14 +78,14 @@ export default function Navbar() {
             transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
           >
             <div className="drawer__head">
-              <img src={company.logo} alt={company.name} />
+              <img src={company.logoDark} alt={company.name} />
               <button className="drawer__close" onClick={() => setDrawer(false)} aria-label="Close menu"><X size={22} /></button>
             </div>
             <motion.ul className="drawer__links" initial="h" animate="s"
               variants={{ h: {}, s: { transition: { staggerChildren: 0.07, delayChildren: 0.25 } } }}>
               {links.map((l) => (
                 <motion.li key={l.to} variants={{ h: { opacity: 0, x: -40 }, s: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>
-                  <NavLink to={l.to} end={l.to === '/'} className={({ isActive }) => (isActive ? 'is-active' : undefined)}>{l.label}</NavLink>
+                  <NavLink to={l.to} end={l.to === '/'} className={({ isActive }) => (isActive ? 'is-active' : undefined)} onClick={() => setDrawer(false)}>{l.label}</NavLink>
                 </motion.li>
               ))}
             </motion.ul>

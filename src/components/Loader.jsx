@@ -21,7 +21,7 @@ export default function Loader() {
       {show && (
         <motion.div
           className="loader"
-          exit={{ y: '-100%' }}
+          exit={{ y: '-100%', opacity: 0 }}
           transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
           aria-hidden="true"
         >
@@ -35,7 +35,7 @@ export default function Loader() {
           </motion.div>
           <motion.img
             className="loader__logo"
-            src={company.logo}
+            src={company.logoDark}
             alt=""
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}

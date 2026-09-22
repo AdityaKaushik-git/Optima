@@ -47,7 +47,7 @@ export default function Hero() {
       </motion.div>
       <div className="hero__shade" />
 
-      <motion.div className="wrap hero__inner glass-dark" style={{ y: textY, opacity: textOpacity, padding: '3rem', borderRadius: '24px', maxWidth: '800px', margin: 'auto', marginTop: '10vh' }}>
+      <motion.div className="wrap hero__inner glass-dark" style={{ y: textY, opacity: textOpacity, padding: 'clamp(1.5rem, 5vw, 3rem)', borderRadius: '24px', maxWidth: '800px', margin: 'auto', marginTop: 'clamp(4rem, 10vh, 8rem)' }}>
         <motion.div className="hero__kicker" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: d, ease }}>
           <span className="dot"><Star size={14} fill="currentColor" /></span>
           Waterproofing specialists in Dubai, U.A.E
