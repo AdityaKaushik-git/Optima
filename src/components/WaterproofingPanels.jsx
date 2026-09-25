@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { CalendarCheck } from 'lucide-react';
-import { waterproofing } from '../data/site';
+import { services as waterproofing } from '../data/site';
 import { useBooking } from './Booking';
 
 export default function WaterproofingPanels() {

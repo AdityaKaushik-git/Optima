@@ -6,8 +6,8 @@ import { useBooking } from './Booking';
 import { company } from '../data/site';
 
 export default function CTABand({
-  title = 'One call can solve all your house problems',
-  text = 'Call us for a quote on your home renovation or waterproofing job, and ask about our current discount.',
+  title = 'Keep water out for the life of the building',
+  text = 'Send us your drawings or book a site visit. We’ll recommend the right system and prepare the submittals for your consultant.',
 }) {
   const { open } = useBooking();
   const drops = useMemo(() => Array.from({ length: 18 }, (_, i) => ({

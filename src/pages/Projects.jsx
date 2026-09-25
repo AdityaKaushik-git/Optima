@@ -3,7 +3,9 @@ import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 import PageHeader from '../components/PageHeader';
 import ProjectCard from '../components/ProjectCard';
 import CTABand from '../components/CTABand';
-import { projects, projectFilters, heroSlides } from '../data/site';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import { projects, projectFilters, heroSlides, recentProjects } from '../data/site';
 
 export default function Projects() {
   const [filter, setFilter] = useState('All');
@@ -12,9 +14,9 @@ export default function Projects() {
   return (
     <>
       <PageHeader
-        title="Projects and case studies"
-        crumb="Projects"
-        lede="Specialised waterproofing systems and technical services we've delivered across the UAE."
+        title="Case studies"
+        crumb="Case studies"
+        lede="How we solved the hardest waterproofing problems on three Dubai substructures."
         image={heroSlides[5]}
       />
       <section className="section">
@@ -37,6 +39,9 @@ export default function Projects() {
               </AnimatePresence>
             </motion.div>
           </LayoutGroup>
+          <p style={{ marginTop: '2.5rem' }}>
+            <Link className="link-arrow" to="/recent-projects">See all {recentProjects.length} recent projects <ArrowRight size={18} /></Link>
+          </p>
         </div>
       </section>
       <CTABand title="Discuss your project" text="Ready to work with a specialised waterproofing contractor? Request a site visit or a consultation with our engineering team." />

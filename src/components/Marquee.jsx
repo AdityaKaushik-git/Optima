@@ -4,7 +4,7 @@ import { services } from '../data/site';
 
 export default function Marquee() {
   const reduce = useReducedMotion();
-  const row = services.map((s) => s.title);
+  const row = [...services.map((s) => s.title), 'Pile head treatment', 'SBS membrane tanking', 'Flood testing', '10–20 year warranty'];
   return (
     <div className="marquee" aria-label="Our services">
       <motion.div

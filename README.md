@@ -94,3 +94,11 @@ Fonts: **Archivo** (expanded, headings) and **Public Sans** (body), loaded from 
 ## Not yet included
 
 The old site had a "Certificate" menu item with no content. Add a page in `src/pages/` and a link in `components/Navbar.jsx` once the certificates are available.
+
+## Content updates (v2)
+
+- **Waterproofing only**: substructure (with pile head treatment), wet area, combo roof, injection treatment, GRP lining. Edit them in `src/data/site.js → services`.
+- **Recent projects** page (`/recent-projects`): edit the table in `site.js → recentProjects`.
+- **Warranty** (10–20 years on SBS membrane): `site.js → warranty`.
+- **Team**: `site.js → team`. Replace the `XX+` experience placeholders and add headshots to `public/images/team/`, then set `photo: local('team/name.jpg')`.
+- **Photos** live in `public/images/`. Reference them with `local('file.jpg')` so they work under the `/Optima/` base path.

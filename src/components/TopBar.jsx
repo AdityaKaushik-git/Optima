@@ -11,7 +11,7 @@ export default function TopBar() {
           <a className="topbar__hide-sm" href={`mailto:${company.email}`}><Mail size={15} /> {company.email}</a>
         </div>
         <div className="topbar__group topbar__promo topbar__hide-md" style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--star)' }}>
-          Call us today for a quote on your Home Renovation and enjoy our exclusive discount!
+          Up to 20 years’ warranty on SBS membrane systems
         </div>
         <div className="topbar__group topbar__hide-sm">
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: '.45rem' }}><MapPin size={15} /> Deira, Dubai, U.A.E</span>

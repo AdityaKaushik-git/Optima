@@ -17,8 +17,8 @@ export default function Footer() {
           <div>
             <img src={company.logoDark} alt={company.name} />
             <p style={{ fontSize: '.95rem', maxWidth: '34ch' }}>
-              A Dubai technical contracting company specialising in waterproofing, with civil, interior and
-              engineering support services across the U.A.E.
+              Manufacturer-approved waterproofing applicator in Dubai: substructure, wet area, combo roof,
+              injection and GRP lining.
             </p>
           </div>
           <div>
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
           <div>
             <h3>Services</h3>
-            <ul>{services.slice(0, 7).map((s) => <li key={s.title}><Link to="/services">{s.title}</Link></li>)}</ul>
+            <ul>{services.map((s) => <li key={s.title}><Link to="/services">{s.title}</Link></li>)}</ul>
           </div>
           <div>
             <h3>Contact</h3>
@@ -44,7 +44,7 @@ export default function Footer() {
         <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: 'var(--step--1)' }}>
           Designed &amp; built by <strong style={{ color: 'var(--star)', fontWeight: 600 }}>Aditya Kaushik</strong>
         </span>
-        <span>Waterproofing and technical services in Dubai, U.A.E.</span>
+        <span>Waterproofing specialists in Dubai, U.A.E. Licence No. {company.licence}</span>
       </div>
     </footer>
   );

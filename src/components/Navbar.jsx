@@ -9,7 +9,8 @@ export const links = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About us' },
   { to: '/services', label: 'Services' },
-  { to: '/projects', label: 'Projects' },
+  { to: '/projects', label: 'Case studies' },
+  { to: '/recent-projects', label: 'Recent projects' },
   { to: '/contact', label: 'Contact' },
 ];
 
@@ -50,7 +51,7 @@ export default function Navbar() {
           </Link>
           <ul className="nav__links">
             {links.map((l) => {
-              const active = l.to === '/' ? pathname === '/' : pathname.startsWith(l.to);
+              const active = l.to === '/' ? pathname === '/' : pathname === l.to;
               return (
                 <li key={l.to} style={{ position: 'relative', isolation: 'isolate' }}>
                   <NavLink to={l.to} className={`nav__link${active ? ' is-active' : ''}`}>

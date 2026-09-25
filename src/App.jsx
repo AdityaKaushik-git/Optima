@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
+import RecentProjects from './pages/RecentProjects';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -59,6 +60,7 @@ export default function App() {
             <Route path="/about" element={<Page><About /></Page>} />
             <Route path="/services" element={<Page><Services /></Page>} />
             <Route path="/projects" element={<Page><Projects /></Page>} />
+            <Route path="/recent-projects" element={<Page><RecentProjects /></Page>} />
             <Route path="/contact" element={<Page><Contact /></Page>} />
             <Route path="*" element={<Page><NotFound /></Page>} />
           </Routes>

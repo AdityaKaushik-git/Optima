@@ -62,8 +62,8 @@ export default function Hero() {
           ))}
         </h1>
         <motion.p className="hero__lede" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: d + 0.6, ease }}>
-          Premier waterproofing, specialised insulation and technical engineering services for homes,
-          commercial buildings and industrial projects across the UAE.
+          Manufacturer-approved waterproofing for substructures, wet areas and roofs, with up to
+          20 years’ written warranty on SBS membrane systems.
         </motion.p>
         <motion.div className="hero__actions" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: d + 0.75, ease }}>
           <button className="btn" onClick={() => open()}><CalendarCheck size={18} /> Book appointment</button>
